@@ -104,12 +104,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)\raylib-4.5.0_win64_msvc16\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\CrosingGameHCMUS\include;$(SolutionDir)\CrosingGameHCMUS\lib\raylib-4.5.0_win64_msvc16\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)\raylib-4.5.0_win64_msvc16\lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)\CrosingGameHCMUS\lib\raylib-4.5.0_win64_msvc16\lib</AdditionalLibraryDirectories>
       <AdditionalDependencies>winmm.lib;raylib.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -131,6 +131,18 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="src\CANIMAL.cpp" />
+    <ClCompile Include="src\CGAME.cpp" />
+    <ClCompile Include="src\CPEOPLE.cpp" />
+    <ClCompile Include="src\CVEHICLE.cpp" />
+    <ClCompile Include="src\header.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\CANIMAL.h" />
+    <ClInclude Include="include\CGAME.h" />
+    <ClInclude Include="include\CPEOPLE.h" />
+    <ClInclude Include="include\CVEHICLE.h" />
+    <ClInclude Include="include\header.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

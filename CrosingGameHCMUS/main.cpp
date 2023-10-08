@@ -1,4 +1,5 @@
 #include "raylib.h"
+#include "header.h"
 
 int main(void)
 {
@@ -31,5 +32,6 @@ int main(void)
 
     // De-Initialization
     CloseWindow();        // Close window and OpenGL context
+
     return 0;
 }
